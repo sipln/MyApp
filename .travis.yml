@@ -35,4 +35,4 @@ before_script:
 
 
 scripts:
-- ./gradlew build connectedCheck
+- "./gradlew clean build connectedCheck"
