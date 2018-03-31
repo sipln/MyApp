@@ -25,6 +25,9 @@ android:
   - build-tools-$ANDROID_BUILD_TOOLS
   - android-$ANDROID_API
   - android-$EMULATOR_API_LEVEL
+  - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
+
+  - sys-img-armeabi-v7a-addon-google_apis-google-$EMULATOR_API_LEVEL
 
 # Emulator Management: Create, Start and Wait
 before_script:
@@ -34,4 +37,4 @@ before_script:
   - adb shell input keyevent 82 &
 
 scripts:
-- ./gradlew clean build connectedCheck
+- ./gradlew --deamon clean build connectedCheck
