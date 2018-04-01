@@ -18,7 +18,6 @@ android:
   - build-tools-27.0.3
   - android-22
   - sys-img-armeabi-v7a-android-22
-  -
 
 
 # Emulator Management: Create, Start and Wait
